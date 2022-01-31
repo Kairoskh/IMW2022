@@ -82,16 +82,25 @@ echo "<h2><span>Puntuación:</span></h2>";
     }
     echo "</tr>";
 //Jugadas a realizar
-    if ($jugador1 == "paper" && $jugador2 == "rock" || $jugador1 == "scissors" && $jugador2 == "paper" || $jugador1 == "rock" && $jugador2 == "scissors"){
-        echo "Ha ganado el jugador 1. OBTIENES + 1 PUNTO.<br>";
-        $cuentaj1++;
-    }
-    if ($jugador2 == "paper" && $jugador1 == "rock" || $jugador2 == "scissors" && $jugador1 == "paper" || $jugador2 == "rock" && $jugador1 == "scissors"){
-        echo "Ha ganado el jugador 2. OBTIENES + 1 PUNTO <br>";
-        $cuentaj2++;
-    }
-    if ($jugador2 == "paper" && $jugador1 == "paper" || $jugador2 == "scissors" && $jugador1 == "scissors" || $jugador2 == "rock" && $jugador1 == "rock"){
-        echo "Han empatado.<br>";
+if ($jugador2 == "paper" && $jugador1 == "paper" || $jugador2 == "scissors" && $jugador1 == "scissors" || $jugador2 == "rock" && $jugador1 == "rock"){
+    echo "Han empatado.<br>";
+}
+elseif ($jugador1 == "rock" and $jugador2 == "paper"){
+    echo "Ha ganado el jugador 1. OBTIENES + 1 PUNTO.<br>";
+    $cuentaj1++;
+}
+elseif ($jugador1 == "paper" and $jugador2  == "rock"){
+    echo "Ha ganado el jugador 1. OBTIENES + 1 PUNTO.<br>";
+    $cuentaj1++;
+}
+elseif ($jugador1 == "scissors" and $jugador2 == "paper"){
+    echo "Ha ganado el jugador 1. OBTIENES + 1 PUNTO.<br>";
+    $cuentaj1++;
+}
+else{
+    echo "Ha ganado el jugador 2. OBTIENES + 1 PUNTO.<br>";
+    $cuentaj2++;
+}
     }
 //Suma de puntos y resultado final.
     if($cuentaj1 == 2){
@@ -99,7 +108,6 @@ echo "<h2><span>Puntuación:</span></h2>";
     }
     elseif($cuentaj2 == 2){
         echo "<h2> <img src='trofeo.png' alt='Trofeo'> <br> ¡FELICIDADES! <br> ¡El jugador 2 ha ganado! </h2>";
-    }
     }
         echo "</table>"; 
 ?>
