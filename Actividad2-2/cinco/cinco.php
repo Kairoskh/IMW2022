@@ -36,6 +36,7 @@
         p { font-size: 25px;}
 
     </style>
+</head>
 <body>
 <h1>Piedra, papel y tijeras con el bucle: <span>for</span></h1>
  <?php 
