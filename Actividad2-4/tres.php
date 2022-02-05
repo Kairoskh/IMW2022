@@ -35,6 +35,9 @@
         .noentero {
             background-color: red;
         }
+        h2 {
+            color: orange;
+        }
     </style>
 </head>
 <body>
@@ -50,11 +53,26 @@ El número de elementos que contiene el array será el
 especificado en el parámetro de entrada numero_de_elementos
 */
 
+//Ejercicio principal:
+
+function inicializar_array ($numero_de_elementos, $max, $min){
+    $array = [];
+    for($a = 0; $a <$numero_de_elementos; $a++){
+
+        $array[$a] = rand($min,$max); 
+    }
+    return $array;
+}
+var_dump(inicializar_array(14,7,3));
+
+//Otra manera distinta de hacer el ejercicio con tablas y posiciones:
+
+echo "<h2>Otra forma de realizar el ejercicio</h2>";
 $numero_de_elementos = array(10.9, 7, 1.2, -10, 77, 99, 2.1, 4.5, 12, 9.7);
 $min = -10;
 $max = 99;
 
-function inicializar_array ($numero_de_elementos, $min, $max){
+function inicializar_array2 ($numero_de_elementos, $min, $max){
 
 //Información de la función
    /* $conteo =count($numero_de_elementos);
@@ -65,7 +83,7 @@ function inicializar_array ($numero_de_elementos, $min, $max){
     for ($i = 0; $i < $conteo; ++$i){
         echo $numero_de_elementos[$i]."<br>";
     }*/
-
+    echo "Números enteros entre $min <br> y $max<br><br>";
 //Tabla especificando los números enteros y los que no, dentro del array y máximos y minímos dentro de el mismo.
 
     foreach($numero_de_elementos as $x=>$x_valor)
@@ -82,7 +100,9 @@ function inicializar_array ($numero_de_elementos, $min, $max){
    }
   
 }
-    echo inicializar_array($numero_de_elementos, $min, $max);
+    echo inicializar_array2($numero_de_elementos, $min, $max);
+
+    
 ?>
 
 </body>
