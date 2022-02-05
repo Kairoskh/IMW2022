@@ -99,11 +99,11 @@ for ($i = 0; $i < $numero; $i++) {
 // Mostramos cuántas partidas ha ganado cada uno
 
 echo "  <p>El jugador 1 ha ganado <strong>$jugador1</strong> ve";
-echo ($jugador1 != 1) ? "ces" : "z";//Si ha ganado una vez sera la "z" y si haganado varias veces sera "ces"
+echo ($jugador1 != 1) ? "ces" : "z";//Si ha ganado una vez sera la "z" y si ha ganado varias veces sera "ces"
 echo ", el jugador 2 ha ganado <strong>$jugador2</strong> ve";
-echo ($jugador2 != 1) ? "ces" : "z";//Si ha ganado una vez sera la "z" y si haganado varias veces sera "ces"
+echo ($jugador2 != 1) ? "ces" : "z";//Si ha ganado una vez sera la "z" y si ha ganado varias veces sera "ces"
 echo " y los jugadores han empatado <strong>$empate</strong> ve";
-echo ($empate != 1) ? "ces" : "z";//Si han empatado una vez sera la "z" y si haganado varias veces sera "ces"
+echo ($empate != 1) ? "ces" : "z";//Si han empatado una vez sera la "z" y si han empatado varias veces sera "ces"
 echo ".</p>";
 
 // Mostramos quién ha ganado la partida
