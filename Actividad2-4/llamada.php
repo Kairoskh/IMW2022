@@ -20,17 +20,41 @@
             padding: 5px;
             display: inline-block;
         }
+        h2 {
+            color: orange;
+        }
     </style>
 </head>
 <body>
-<h1>Funciones ejercicios 1 al 5 con PHP.</h1>
-<p>En este documento encontraremos enlaces incrustados a los ejercicios realizados anteriormente desde el 1 al 5.</p>
-<p>Espero que sea de tu agrado:</p>
+<?php
+    include('funciones.php');
+?>
+<h1>PROBANDO FUNCIONES DE LOS EJERCICIOS 1 al 5 CONPHP.</h1>
+<p>PRUEBA DE USO DE FUNCIONES INCRUSTADAS EN EL DOCUMENTO "funciones.php" A continuación:</p>
 
 <!--Crea un archivo llamado funciones.php que contenga todas las funciones creadas en los ejercicios anteriores. 
 Escribe un script PHP que incluya el archivo funciones.php y que haga uso de cada una de ellas.-->
 
-<?php include 'funciones.php';?>
+<?php
+    
+        echo "<h2>Ejercicio 1. Tabla de multiplicar:</h2>";
+        $num = rand(1,10);
+        echo "La tabla de multiplicar del número: " . $num;
+        echo "<br>";
+        multp($num);
+
+        echo "<h2>Ejercicio 2. Tabla de multiplicar con inicio y fin:</h2>";
+        tablas(6,7);
+
+        echo "<h2>Ejercicio 3. Sacar números enteros entre un máximo y minímo:</h2>";
+        var_dump(inicializar_array(13,9,1));
+
+        echo "<h2>Ejercicio 4. Calcular media de valores insertados en el array:</h2>";
+        echo calcular_media([76,14,6]);
+
+        echo "<h2>Ejercicio 5. Imprimir array con dos columnas una de posición del array y otra del valor del mismo:</h2>";
+        imprimir_array([1, 2, 5, 9, 10]);
+    ?>
 
 </body>
 </html>
