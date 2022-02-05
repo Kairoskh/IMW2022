@@ -38,7 +38,6 @@
 y muestre su contenido en una tabla con dos columnas. 
 La primera columna mostrará la posición del array y la segunda el valor que hay en esa posición.*/
 
-$valores= array(0, 7, 14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84);//Array a utilizar.
 function imprimir_array($valores){
     foreach($valores as $posicion=>$valor)
    {
@@ -51,9 +50,8 @@ function imprimir_array($valores){
     echo "</tr></tbody></table>";
    }
 }
-echo imprimir_array($valores);
-
+imprimir_array([0, 7, 14, 21, 28]);
 ?>
 
 </body>
-</html>
+</html
