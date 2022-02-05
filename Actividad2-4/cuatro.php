@@ -47,7 +47,7 @@ $promedio = 0;//Variable de la media
 
     return "<br> La <span>media</span> del array \$valores es: $promedio<br>";
 }
-echo calcular_media([10,4,2,7,5]);
+echo calcular_media([77, 14, 3, 7, 5, 21]);
 
 ?>
 
