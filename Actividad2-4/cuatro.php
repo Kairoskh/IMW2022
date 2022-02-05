@@ -31,17 +31,24 @@
 y que devuelva la media de todos los valores que contiene.
 */
 
-$valores= array(12,34,56,4,3,2,1,8,9,10,77,89,121,458,13);//Array a utilizar.
 function calcular_media($valores){
-    $media = 0; //Variable de la media
-    for($x = 0; $x < 15; $x++){
 
-        $media += $valores[$x];
-     }
-     $media = $media / 15;
-     return "<br> La <span>media</span> del array \$valores es: $media<br>";
+//Variables a utilizar:
+
+$num = 0;//Suma de valores del array
+$total = count($valores);//Conteo de valores del array
+$promedio = 0;//Variable de la media
+    for($x= 0; $x < $total; $x++){
+        echo "Valores dentro de la varible: ". $valores[$x] ."<br>";
+        $num +=  $valores[$x];
+    }
+
+    $promedio = $num / $total;
+
+    return "<br> La <span>media</span> del array \$valores es: $promedio<br>";
 }
-echo calcular_media($valores);
+echo calcular_media([10,4,2,7,5]);
+
 ?>
 
 </body>
