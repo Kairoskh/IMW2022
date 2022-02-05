@@ -50,9 +50,9 @@ foreach($edad as $x=>$x_valor)
 
 //De forma ascendente ordenado por clave.
 
-echo "<h2>Ordenadas de forma ascendente por la clave con: <span>arsort</span>.</h2>";
+echo "<h2>Ordenadas de forma ascendente por la clave con: <span>ksort</span>.</h2>";
 echo "<br>";
-arsort($edad);
+ksort($edad);
 foreach($edad as $i=>$i_valor)
    {
    echo "Clave = " . $i . ", Valor =" . $i_valor;
@@ -61,9 +61,9 @@ foreach($edad as $i=>$i_valor)
 
 //De forma descendente ordenado por valor.
 
-echo "<h2>Ordenadas de forma descendente por el valor con: <span>ksort</span>.</h2>";
+echo "<h2>Ordenadas de forma descendente por el valor con: <span>arsort</span>.</h2>";
 echo "<br>";
-ksort($edad);
+arsort($edad);
 foreach($edad as $e=>$e_valor)
    {
    echo "Clave = " . $e . ", Valor = " . $e_valor;
