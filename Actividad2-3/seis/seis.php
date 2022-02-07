@@ -47,7 +47,7 @@ $numero = rand(2, 10);
 
 echo "<h2>Jugador 1</h2>";
 
-// Guardamos los valores del Jugador 1 en la matriz $dados1
+// Guardamos los valores del Jugador 1 en la variable $dados1
 
 $dados1 = [];
 for ($i = 0; $i < $numero; $i++) {
@@ -64,7 +64,7 @@ echo "</p>";
 
 echo "<h2>Jugador 2</h2>";
 
-// Guardamos los valores del Jugador 2 en la matriz $dados2
+// Guardamos los valores del Jugador 2 en la variable $dados2
 
 $dados2 = [];
 for ($i = 0; $i < $numero; $i++) {
