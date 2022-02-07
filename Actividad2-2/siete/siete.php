@@ -49,11 +49,6 @@ while ($numero<=105){
 }
 echo "</table></tr>";
 echo "<br><br>";
-/**
- * Ejercicio 5 | Tema 5
- *  (con while).
- * @author Lucia Blanco
- */
 echo "<h2>Mostrar los números de 770 a 77 de 77 en 77:</h2>";
 echo "<table><tr>";
       $valor = 770;
