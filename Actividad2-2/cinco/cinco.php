@@ -82,7 +82,7 @@ echo "<h2><span>Puntuación:</span></h2>";
     }
     echo "</tr>";
 //Jugadas a realizar
-if ($jugador2 == "paper" || $jugador1 == "paper" || $jugador2 == "scissors" && $jugador1 == "scissors" || $jugador2 == "rock" && $jugador1 == "rock"){
+if ($jugador2 == "paper" && $jugador1 == "paper" || $jugador2 == "scissors" && $jugador1 == "scissors" || $jugador2 == "rock" && $jugador1 == "rock"){
     echo "Han empatado.<br>";
 }
 elseif ($jugador1 == "rock" and $jugador2 == "paper"){
