@@ -69,7 +69,7 @@ function primo($numero){
     echo "<td>El número ".$primo." NO es primo.</td>";
 }
 }
-    echo "<//table></tr>";
+    echo "</table></tr>";
 ?>
 </body>
 </html>
