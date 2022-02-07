@@ -75,7 +75,7 @@ $num= rand(0,10);
 echo suma($num);
 
 echo "<br><br>";
-echo "<h2>Cortar un texto de 30 letras y aladir puntos suspensivos al final.</h2>";
+echo "<h2>Cortar un texto de 30 letras y añadir puntos suspensivos al final.</h2>";
 
 //Corta un texto a 30 letras y añade puntos suspensivos al final.
 
