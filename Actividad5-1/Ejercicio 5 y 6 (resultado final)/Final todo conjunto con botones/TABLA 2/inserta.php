@@ -15,7 +15,7 @@ if (isset($_POST["Enviar"]))  {
   $categoria = $_POST["categoria"];
     // Creamos la conexión
   $conn = dbConnect();
-  // Insertamos el dato del estudiante
+  // Insertamos el dato del proveedor
   $sqlInsert = mysqli_query($conn,"INSERT INTO proveedores(empresa, direccion, envios_recientes, telefono, provincia, unidades_vendidas, categoria) 
   values ('$empresa','$direccion','$envios_recientes','$telefono','$provincia','$unidades_vendidas','$categoria');");
   // Cerramos la conexión
