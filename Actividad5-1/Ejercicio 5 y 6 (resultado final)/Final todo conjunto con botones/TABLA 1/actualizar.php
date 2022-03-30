@@ -14,7 +14,7 @@ $query = mysqli_query($conn, "SELECT * FROM productos WHERE id='$id'");
 
 $resul = mysqli_fetch_assoc($query);
   
-// ACTUALIZACIÓN DEL ESTUDIANTE 
+// ACTUALIZACIÓN DEL PRODUCTO 
 
 // Si se ha enviado el formulario 
 if (isset($_POST["Actualizar"]))  { 
@@ -27,7 +27,7 @@ if (isset($_POST["Actualizar"]))  {
     $categoria = $_POST["categoria"];
     $id= $_POST["id"];
 
-  // Actualizamos el dato del estudiante
+  // Actualizamos el dato del PRODUCTO
   $sqlInsert = mysqli_query($conn,"UPDATE alumnos 
   SET nombre='$nombre',
   fabricacion='$fabricacion', 
