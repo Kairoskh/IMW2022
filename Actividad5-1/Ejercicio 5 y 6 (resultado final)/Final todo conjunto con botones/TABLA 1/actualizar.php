@@ -5,7 +5,7 @@ get_header();
 
 // Creamos la conexión
 $conn = dbConnect();
-// El ID indica el estudiante para modificar
+// El ID indica el producto para modificar
 $id = $_GET['id'];
 if ($id==0)
     $id=1;
