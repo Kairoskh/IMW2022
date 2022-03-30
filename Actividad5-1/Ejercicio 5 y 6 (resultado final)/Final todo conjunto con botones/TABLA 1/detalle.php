@@ -74,7 +74,7 @@ $resul = mysqli_fetch_assoc($query);
                         <div class="modal-content">
                           <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">
-                                ¿Estás seguro que quieres eliminar este estudiante?</h5>
+                                ¿Estás seguro que quieres eliminar este producto?</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">Recuerda que se eliminará de la base de datos definitivamente. 
